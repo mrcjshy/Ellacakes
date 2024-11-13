@@ -23,14 +23,11 @@ body {
     padding-top: 0;
 }
 
-
 nav {
     display: flex;
     align-items: center;
     padding: 0px 20px;
 }
-
-
 
 nav ul {
     position: absolute;
@@ -43,7 +40,6 @@ nav ul {
     padding: 20;
     margin-left: 160px;
     margin-top: 70px;
-
 }
 
 nav ul li a {
@@ -86,16 +82,6 @@ h2 {
     gap: 10px;
 }
 
-.btn-play:hover {
-    background-color: #bbb3b3;
-    color: white;
-}
-
-.btn-info:hover {
-    background-color: white;
-    color: black;
-}
-
 .btn {
     display: flex;
     align-items: center;
@@ -105,6 +91,7 @@ h2 {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: color 0.3s ease;
 }
 
 .btn-play {
@@ -114,19 +101,25 @@ h2 {
     border: 1px solid #ddd;
     top: 76%;
     left: 5%;
-    transition: color 0.3s ease;
+}
 
+.btn-play:hover {
+    background-color: #bbb3b3;
+    color: white;
 }
 
 .btn-info {
-
     position: absolute;
     background-color: #bbb3b3;
     color: white;
     top: 76%;
     left: 13%;
     height: 41px;
-    transition: color 0.3s ease;
+}
+
+.btn-info:hover {
+    background-color: white;
+    color: black;
 }
 
 .playicon {
@@ -142,7 +135,6 @@ h2 {
     height: 17px;
     margin-right: 8px;
     vertical-align: middle;
-
 }
 
 .top10 {
@@ -150,7 +142,7 @@ h2 {
     height: 35px;
     width: 33px;
     top: 35%;
-    left: 70px;
+    left: 60px;
     border-radius: 6px;
 }
 
@@ -158,7 +150,6 @@ h2 {
     position: absolute;
     font-family: helvetica;
     font-size: 20px;
-    position: absolute;
     top: 38%;
     left: 95px;
     user-select: none;
@@ -174,4 +165,113 @@ h2 {
     line-height: 130%;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.701);
     user-select: none;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 1024px) {
+    h1 {
+        font-size: 60px;
+        left: 30px;
+    }
+
+    .btn {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .btn-play,
+    .btn-info {
+        top: auto;
+        left: auto;
+        position: relative;
+        margin-top: 10px;
+    }
+
+    .top10 {
+        top: 30%;
+        left: 50px;
+    }
+
+    .mostbeautiful {
+        top: 33%;
+        left: 80px;
+    }
+
+    .par {
+        margin-top: 200px;
+        margin-left: 10px;
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 50px;
+        left: 20px;
+    }
+
+    .btn {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .btn-play,
+    .btn-info {
+        top: auto;
+        left: auto;
+        position: relative;
+        margin-top: 10px;
+    }
+
+    .top10 {
+        top: 30%;
+        left: 40px;
+    }
+
+    .mostbeautiful {
+        top: 33%;
+        left: 70px;
+    }
+
+    .par {
+        margin-top: 180px;
+        margin-left: 10px;
+        max-width: 60%;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 35px;
+        left: 10px;
+    }
+
+    .btn {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+
+    .btn-play,
+    .btn-info {
+        top: auto;
+        left: auto;
+        position: relative;
+        margin-top: 10px;
+    }
+
+    .top10 {
+        top: 25%;
+        left: 30px;
+    }
+
+    .mostbeautiful {
+        top: 28%;
+        left: 60px;
+    }
+
+    .par {
+        margin-top: 150px;
+        margin-left: 5px;
+        max-width: 70%;
+    }
 }
