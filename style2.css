@@ -1,0 +1,169 @@
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+body {
+  box-sizing: border-box;
+  color: aliceblue;
+  background-image: url("images/ella.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: Helvetica, Arial;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin: 20px;
+}
+.logo {
+  width: 150px;
+  filter: brightness(1.2) contrast(1.5) drop-shadow(0 0 5px rgba(0, 0, 0, 0.1));
+
+  cursor: pointer;
+}
+
+.nav-bar {
+  margin: 15px;
+}
+.nav-bar ul {
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
+  list-style: none;
+}
+.nav-bar ul li {
+  text-decoration: none;
+}
+a {
+  text-decoration: none;
+}
+
+.na a {
+  font-family: "Sweck", sans-serif;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 1rem;
+  filter: brightness(1.2) contrast(1.5) drop-shadow(0 0 5px rgba(0, 0, 0, 0.7));
+}
+
+.na a:hover {
+  border-radius: 5px;
+  color: rgba(238, 230, 230, 0.9);
+  transition: 0.3s;
+}
+
+main {
+  margin: 35px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.toplogo {
+  height: 35px;
+  width: 35px;
+}
+.par {
+  font-family: "Sweck", sans-serif;
+  font-size: 1.2rem;
+}
+.one {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 4rem;
+}
+.one h1 {
+  font-size: 70px;
+}
+.name {
+  font-size: 30px;
+}
+.two {
+  display: flex;
+  align-items: center;
+}
+
+.three {
+  max-width: 50vw;
+}
+.btns {
+  display: flex;
+  gap: 3rem;
+}
+.btn-play {
+  border: none;
+  color: #ffffff;
+  font-size: 1.3rem;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 10px 25px;
+  color: black;
+}
+.btn-info {
+  border: none;
+  color: #ffffff;
+  font-size: 1.3rem;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 10px 25px;
+  background-color: rgba(128, 128, 128, 0.7);
+}
+
+.btn-play:hover {
+  background-color: rgba(211, 211, 211, 0.9);
+  transition: 0.3s;
+}
+
+.btn-info:hover {
+  background-color: rgba(128, 128, 128, 0.4);
+  transition: 0.3s;
+}
+
+.btn-play:active {
+  transform: scale(0.97);
+}
+
+.btn-info:active {
+  transform: scale(0.97);
+}
+
+@media (max-width: 760px) {
+  header {
+    width: 100%;
+    margin: auto;
+  }
+
+  .nav-bar ul {
+    gap: 20px;
+  }
+  .nav-bar ul li a {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    width: 100%;
+    margin: auto;
+  }
+
+  .nav-bar ul {
+    gap: 20px;
+  }
+  .nav-bar ul li a {
+    font-size: 12px;
+  }
+  main {
+    align-items: center;
+    justify-content: center;
+  }
+  .one {
+    align-items: center;
+  }
+}
