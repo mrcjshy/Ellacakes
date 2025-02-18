@@ -16,13 +16,11 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   margin: 20px;
 }
 .logo {
   width: 150px;
   filter: brightness(1.2) contrast(1.5) drop-shadow(0 0 5px rgba(0, 0, 0, 0.1));
-
   cursor: pointer;
 }
 
@@ -80,9 +78,21 @@ main {
 }
 .one h1 {
   font-size: 70px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  line-height: 70px;
+  text-align: left;
+  font-weight: 900;
 }
 .name {
   font-size: 30px;
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  line-height: 20px;
+  font-weight: 600;
 }
 .two {
   display: flex;
@@ -160,10 +170,31 @@ main {
     font-size: 12px;
   }
   main {
-    align-items: center;
+    align-items: right;
     justify-content: center;
   }
   .one {
     align-items: center;
+  }
+  h1,
+  h3 {
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+
+  .three {
+    align-items: start;
+  }
+
+  .btns {
+    gap: 20px;
+  }
+  .btn-play {
+    padding: 3px 8px;
+    font-size: 18px;
+  }
+  .btn-info {
+    padding: 3px 8px;
+    font-size: 18px;
   }
 }
